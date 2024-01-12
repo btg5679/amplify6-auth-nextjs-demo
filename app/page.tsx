@@ -5,7 +5,7 @@ import React from "react";
 import { runWithAmplifyServerContext } from "./util/amplify-server-util";
 
 export default async function AppPage() {
-  const synth = await runWithAmplifyServerContext({
+  const resource = await runWithAmplifyServerContext({
     nextServerContext: { cookies },
     operation: async (contextSpec) => {
       try {
@@ -19,7 +19,7 @@ export default async function AppPage() {
     },
   });
 
-  if (!synth) {
+  if (!resource) {
     return notFound();
   }
 
