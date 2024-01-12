@@ -1,0 +1,16 @@
+{
+  "name": "amplify6-auth-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-amplify/adapter-nextjs": "^1.0.7",
+    "next": "=13.5.2",
+    "react": "18.2.0"
+  }
+}
